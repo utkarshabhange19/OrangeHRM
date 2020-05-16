@@ -35,7 +35,8 @@ public class BaseClass {
 		driver.get("https://edusol20-trials65101.orangehrmlive.com/auth/login");
 		System.out.println("init method exicute");
 		
-		System.out.println("git changes");
+	//	System.out.println("git changes");
+		System.out.println("hello");
 		
 	}
 	
