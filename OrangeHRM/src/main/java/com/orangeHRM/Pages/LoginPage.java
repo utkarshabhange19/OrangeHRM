@@ -13,24 +13,21 @@ import cucumber.api.java.en.Then;
 
 public class LoginPage extends BaseClass {
 	
-	public static void Valid_Credentials_username_and_password() throws Exception {
+	public static void User_enter_credentials_username_and_password(String Username , String Password) throws Exception {
 		WebElement username=driver.findElement(By.xpath(pro.getProperty("username")));
-		username.sendKeys("Admin");
+		username.sendKeys(Username);
 		Thread.sleep(5000);
 		WebElement password =driver.findElement(By.xpath(pro.getProperty("password")));
-		password.sendKeys("10QwjTXO@z");
+		password.sendKeys(Password);
 	}
 
-	public static void user_clicks_on_login_page() {
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-	String Error=driver.findElement(By.xpath("//*[@id=\"toast-container\"]/div/div")).getText();
-	System.out.println(Error);
+	public static void user_clicks_on_submitButton() {
+		driver.findElement(By.xpath("//input[@type='submit']")).click(); // click on submit button
+
 	}
 
 
-	public static void close_the_browser_login_() {
-		driver.close();
-	}
+	
 	
 public static boolean valid_user_name() throws Exception {
 
