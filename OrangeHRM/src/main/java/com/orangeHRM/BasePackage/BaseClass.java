@@ -13,18 +13,24 @@ public class BaseClass {
 	
 	protected static WebDriver driver;
 	
-	public static Properties pro;
+	public static Properties pro ,or;
 
 	public BaseClass() {
 		pro = new Properties();
-		FileInputStream ip;
+		or = new Properties();
+		FileInputStream ip1 , ip2;
 		try {
-			ip = new FileInputStream(
+			ip1 = new FileInputStream(
 					"C:\\Users\\more\\git\\repository\\OrangeHRM\\src\\main\\java\\com\\orangeHRM\\Properties\\config.properties");
-			pro.load(ip);
-		} catch (Exception e) {
+			pro.load(ip1);
+			
+			ip2 = new FileInputStream(
+					"C:\\Users\\more\\git\\repository\\OrangeHRM\\src\\main\\java\\com\\orangeHRM\\Properties\\OR.properties");
+			or.load(ip2);
+		   } catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public static void init() {
@@ -35,8 +41,7 @@ public class BaseClass {
 		driver.get("https://edusol20-trials65101.orangehrmlive.com/auth/login");
 		System.out.println("init method exicute");
 		
-	//	System.out.println("git changes");
-		System.out.println("hello");
+	
 		
 	}
 	
