@@ -20,7 +20,7 @@ public class BaseClass {
 		FileInputStream ip;
 		try {
 			ip = new FileInputStream(
-					"D:\\SpringBoot API Projects\\OrangeHRM\\src\\main\\java\\com\\orangeHRM\\Properties\\config.properties");
+					"C:\\Users\\more\\git\\repository\\OrangeHRM\\src\\main\\java\\com\\orangeHRM\\Properties\\config.properties");
 			pro.load(ip);
 		} catch (Exception e) {
 			e.printStackTrace();

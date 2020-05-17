@@ -8,7 +8,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="D:\\Task\\OrangeHRM\\src\\main\\java\\com\\orangeHRM\\Feature\\login.feature",//the path of features file
+@CucumberOptions(features="C:\\Users\\more\\git\\repository\\OrangeHRM\\src\\main\\java\\com\\orangeHRM\\Feature\\login.feature",//the path of features file
 	glue={"com.orangeHRM.StepDefination"}
 	
 	
