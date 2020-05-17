@@ -35,7 +35,7 @@ public class BaseClass {
 		driver.get("https://edusol20-trials65101.orangehrmlive.com/auth/login");
 		System.out.println("init method exicute");
 		
-		System.out.println("suraj changes");
+		System.out.println("suraj changes last day");
 		
 	}
 	
